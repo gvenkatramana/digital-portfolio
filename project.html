@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Commerce</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header .logo {
+            text-align: center;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .image{
+            height: 150px;
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h2 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .add-to-cart {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ShopEasy</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="img/Shirt.jpg" alt="Product 1" class="image">
+                <h2>Shirt</h2>
+                <p>350.00rs</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/Shorts.jpg" alt="Product 2" class="image">
+                <h2>Shorts</h2>
+                <p>200.00rs</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/Hat.jpg" alt="Product 3" class="image">
+                <h2>Hat</h2>
+                <p>100.00rs</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
